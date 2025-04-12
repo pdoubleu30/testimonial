@@ -1,0 +1,173 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+
+    font-family: "barlow semi condensed", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Grey-100);
+}
+
+:root{
+    /*Color Variables */
+    --White: hsl(0, 0%, 100%);
+    --Grey-100: hsl(214, 17%, 92%);
+    --Grey-200: hsl(0, 0%, 81%);
+    --Grey-400: hsl(224, 10%, 45%);
+    --Grey-500: hsl(217, 19%, 35%);
+    --Dark-blue: hsl(219, 29%, 14%);
+    --Black: hsl(0, 0%, 7%);
+    --Purple-50: hsl(260, 100%, 95%);
+    --Purple-300: hsl(264, 82%, 80%);
+    --Purple-500: hsl(263, 55%, 52%);
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 13px;
+}
+.flex {
+    display: flex;
+    gap: 1em;
+ 
+    
+}
+
+.vgrad {
+    font-size: .7rem;
+
+}
+
+
+.photo {
+    align-self: center;
+    width: 2rem;
+    border-radius: 50%;
+    border: 2px solid 
+}
+
+.name-title {
+    font-size: .8rem;
+    width: 80%;
+    line-height: .1em;
+}
+
+.bodtext {
+    margin-top: -.5em;
+}
+
+.bodtext p {
+    line-height: 1.4em;
+}
+
+.one {
+    background-color: var(--Purple-500);
+    grid-column: span 2;
+    color: var(--White);
+    background-image: url(./bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 12%;
+}
+
+.two {
+    background-color: var(--Grey-500);
+    color: var(--White);
+}
+
+.three {
+    background-color: var(--White);
+}
+
+.four {
+    background-color: var(--Dark-blue);
+    grid-column: span 2;
+    color: var(--White)
+}
+
+.five {
+    background-color: var(--White);
+    grid-column-start: 4;
+    grid-row: 1 / span 2;
+}
+
+
+
+.container {
+    max-width: 750px;
+    width: 95%;
+    margin: .5em;
+    padding: 1em 1.8em;
+}
+
+.card {
+    border-radius: 2%;
+}
+
+
+.testimonial-grid {
+    padding: 5em 2em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+}
+
+.quotation {
+    display: block;
+    margin-left: 26em;
+    margin-top: -3em;
+}
+
+.patrick.photo {
+    border-color: var(--Purple-500);
+}
+
+.daniel.photo {
+    border-color: var(--Grey-400)
+}
+
+.kira.photo, .jonathan.photo, .jeanette.photo {
+    border: none;
+}
+
+.two, .four {
+    color: var(--Grey-100);
+}
+
+.three, .five {
+    color: var(--Grey-500);
+}
+
+.name {
+    font-weight: 500;
+}
+
+.card {
+    box-shadow: 2em .5em 2em 1em var(--Grey-200);
+}
+
+@media (max-width: 976px) {
+    .testimonial-grid {
+        display: block;
+    }
+
+    .card {
+        margin-bottom: 1.5em;
+        margin: 1.5em 3em;
+    }
+
+    .one {
+        background-image: none;
+    }
+    
+
+    }
+
+    .flex {
+        margin-top: .5em;
+    }
