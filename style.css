@@ -24,6 +24,14 @@ body {
     --Purple-500: hsl(263, 55%, 52%);
 }
 
+.allcards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 5em 4em;
+}
+
 h1 {
     font-weight: 500;
     font-size: 1.3rem;
@@ -100,7 +108,7 @@ p {
 
 .container {
     max-width: 750px;
-    width: 95%;
+    width: 100%;
     margin: .5em;
     padding: 1em 1.8em;
 }
@@ -111,7 +119,7 @@ p {
 
 
 .testimonial-grid {
-    padding: 5em 2em;
+    padding: 0em 2em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5em;
@@ -157,8 +165,7 @@ p {
     }
 
     .card {
-        margin-bottom: 1.5em;
-        margin: 1.5em 3em;
+            margin: 1.5em 4em;
     }
 
     .one {
@@ -166,8 +173,20 @@ p {
     }
     
 
-    }
-
     .flex {
         margin-top: .5em;
     }
+
+    .allcards {
+        display: unset;
+    }
+
+    .one {
+        margin-top: 5em;
+    }
+
+    .five {
+        margin-bottom: 5em;
+    }
+
+}
